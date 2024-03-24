@@ -1,0 +1,37 @@
+import newsApi from "../../../../api/newsApi";
+import ArticleComponent from './components/article';
+import { useEffect, useState } from 'react'
+
+function Doing() {
+  const [articles, setArticles] = useState([])
+ 
+  useEffect(() => {
+    newsApi.newsApi()
+      .then((res) => {
+        setArticles(res.data.articles.slice(0,3));
+      }).catch((err) => {
+      console.log(err);
+    });
+  }, [])
+ 
+    return (
+      <div className='w-3/4 m-auto'>  
+         <div className="flex justify-between"> 
+            <h1 className="h-11 font-bold text-2xl">¿Qué hacemos?</h1>   
+            <h4 className="font-bold">Conocer más sobre nuestros programas</h4>
+        </div>
+        <h6>Calibramos el ecosistema emprendedor de América Latina para<br/>
+            crear prosperidad inclusiva para el individuo, la empresa, <br/>
+            la comunidad y el medio ambiente.
+        </h6>  
+        <div className="flex justify-between mt-12">
+          {articles.map((article, index) => (
+            <ArticleComponent key={index} article={article} index={index} />
+          ))}
+     </div>
+    </div>
+      
+    )
+  }
+  
+  export default Doing

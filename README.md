@@ -1,7 +1,7 @@
 # Prueba Agora 2030
 
  El proyecto consiste en el clon del sitio web existente Agora 2030, se desarrollo la página principal y una página de Blog consumiendo una API para mostrar los artículos.
-
+ Cabe mencionar que la pagina cuenta con responsive para dispositivos moviles y tablet.
 - Layout: Header Footer
 - Pagina principal
   

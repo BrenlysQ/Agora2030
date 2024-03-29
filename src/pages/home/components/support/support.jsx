@@ -56,7 +56,7 @@ function Support() {
                     </div>
                
                     <div className="mt-5"> 
-                        <ReCAPTCHA sitekey="2a1fab639f9c4296af8078950ecb47c9"/>
+                        <ReCAPTCHA sitekey="ef4d1d2a-5621-4a10-ae75-706aab018dd5"/>
                     </div>                
                     <input className="bg-rose-700 text-white rounded-3xl px-6 py-2 text-lg mt-10 cursor-pointer" type="submit"/>
                     

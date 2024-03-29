@@ -21,11 +21,11 @@ function Support() {
       });
 
     return (
-      <div className="mt-12 rounded-xl m-auto py-20 flex justify-between items-center bg-stone-800 ">
-        <div className="container mx-64 rounded-xl p-5">
-            <h1 className="text-2xl font-bold text-white">Suscríbete a nuestro newsletter</h1>
-                <form className="w-full m-auto" onSubmit={handleSubmit((d) => console.log(d))}>
-                    <div className="flex gap-16">     
+      <div className="mt-12 rounded-xl m-auto py-20 flex justify-center items-center bg-stone-800 ">
+        <div className="container mx-10 lg:mx-64 rounded-xl p-5">
+            <h1 className="text-4xl text-white lg:w-1/4">Suscríbete a nuestro newsletter</h1>
+                <form className="w-full m-auto mt-10" onSubmit={handleSubmit((d) => console.log(d))}>
+                    <div className="lg:flex gap-16">     
                         <div className=" w-full">
                             <div className="flex-row items-center border-b border-white py-2">
                                 <input {...register('name')} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-10 focus:outline-none placeholder:text-white" type="text" placeholder="Nombre *" aria-label="Full name"/> 

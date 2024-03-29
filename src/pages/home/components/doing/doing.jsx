@@ -15,16 +15,16 @@ function Doing() {
   }, [])
  
     return (
-      <div className='w-3/4 m-auto'>  
+      <div className='w-11/12 lg:w-3/4 m-auto'>  
          <div className="flex justify-between"> 
-            <h1 className="h-11 font-bold text-2xl">¿Qué hacemos?</h1>   
-            <h4 className="font-bold">Conocer más sobre nuestros programas</h4>
+            <h1 className="h-11 text-blue-950 text-3xl">¿Qué hacemos?</h1>   
+            <h4 className="font-bold cursor-pointer text-blue-950">Conocer más sobre nuestros programas</h4>
         </div>
-        <h6>Calibramos el ecosistema emprendedor de América Latina para<br/>
+        <h6 className="mt-10 lg:mt-0">Calibramos el ecosistema emprendedor de América Latina para<br/>
             crear prosperidad inclusiva para el individuo, la empresa, <br/>
             la comunidad y el medio ambiente.
         </h6>  
-        <div className="flex justify-between mt-12">
+        <div className="flex-row lg:flex lg:justify-between mt-12">
           {articles.map((article, index) => (
             <ArticleComponent key={index} article={article} index={index} />
           ))}

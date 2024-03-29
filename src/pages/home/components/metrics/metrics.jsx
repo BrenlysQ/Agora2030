@@ -1,10 +1,10 @@
 function Metrics() {  
       return (
         <div className="mt-12 bg-blue-900 rounded-xl">
-          <div className="w-3/4 m-auto py-8">
+          <div className="w-11/12 lg:w-3/4 m-auto py-8">
             <h4 className="font-bold flex justify-end text-white cursor-pointer">Ver más</h4>
-            <div className="flex justify-between items-center mt-8">
-              <div className=" w-1/4 rounded-xl p-5">
+            <div className="flex-row lg:flex lg:justify-between items-center mt-8">
+              <div className="lg:w-1/3 lg:w-1/4 rounded-xl p-5">
                 <h1 className="text-2xl font-bold text-white">Impacto</h1>
                 <p className="mt-5 text-white">
                   Nos comprometemos a la transparencia con los emprendedores y el
@@ -13,15 +13,15 @@ function Metrics() {
                 </p>
               </div>
               <div className="w-1/2 flex">
-                <div className="bg-white cursor-pointer rounded-xl m-4 p-3 transition-transform transform hover:scale-110">
+                <div className="bg-white cursor-pointer rounded-xl m-2 p-2 lg:m-4 lg:p-3 transition-transform transform hover:scale-110">
                   <h1 className="text-2xl font-bold text-blue-900 text-center">2,300</h1>
                   <p className="text-blue-900 text-center">Emprendedores atendidos</p>
                 </div>
-                <div className="bg-white cursor-pointer rounded-xl m-4 p-3 transition-transform transform hover:scale-110">
+                <div className="bg-white cursor-pointer rounded-xl m-2 p-2 lg:m-4 lg:p-3 transition-transform transform hover:scale-110">
                   <h1 className="text-2xl font-bold text-blue-900 text-center">329</h1>
                   <p className="text-blue-900 text-center">Catalizadores capacitados</p>
                 </div>
-                <div className="bg-white cursor-pointer rounded-xl m-4 p-3 transition-transform transform hover:scale-110">
+                <div className="bg-white cursor-pointer rounded-xl m-2 p-2 lg:m-4 lg:p-3 transition-transform transform hover:scale-110">
                   <h1 className="text-2xl font-bold text-blue-900 text-center">23</h1>
                   <p className="text-blue-900 text-center">Países que tenemos incidencia</p>
                 </div>

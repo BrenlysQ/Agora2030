@@ -15,7 +15,7 @@ function Financiers() {
   
       return (
         <div className='w-3/4 m-auto mt-12'>  
-            <h1 className="h-11 font-bold text-2xl">Nuestros Financiadores</h1>              
+            <h1 className="h-11 text-blue-950 text-3xl">Nuestros Financiadores</h1>              
             <div className='mt-10'>
                 <Carousel
                 additionalTransfrom={0}

@@ -13,11 +13,12 @@ function News() {
     }, [])
    
       return (
-        <div className='w-3/4 m-auto mt-12'>  
-          <h1 className="h-11 font-bold text-2xl">Convocatorias y Novedades</h1>   
-          <div className="flex justify-between mt-8">
+        <div className='w-11/12 lg:w-3/4 m-auto mt-12'>  
+          <h1 className="h-11 text-blue-950 text-3xl">Convocatorias y Novedades</h1>   
+          <div className="flex-row lg:flex lg:justify-between mt-8">
             {articles.map((article, index) => (
-                <div key={index} className="w-1/3 m-5 cursor-pointer">
+                <div key={index} className="lg:w-1/3 m-5 cursor-pointer relative">
+                  <h4 className="bg-gray-700 w-1/3 text-white rounded-xl text-center absolute top-3 left-3">{article.source.name}</h4>
                     <img
                         className="object-fill  h-60 w-full rounded-xl m-auto"
                         src={article.urlToImage}

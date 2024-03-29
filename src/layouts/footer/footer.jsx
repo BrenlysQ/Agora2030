@@ -10,10 +10,10 @@ import { useNavigate } from "react-router-dom";
 function Footer() {
    const navigate = useNavigate();
  return (
-   <div className="w-3/4 m-auto flex justify-between mt-20">
+   <div className="w-3/4 m-auto flex-column lg:flex lg:justify-between mt-20">
      <div className="flex-row">
        <img src={Logo} className="w-40" onClick={() => navigate("/")} />
-        <p className="text-xs w-3/4 mt-64">
+        <p className="text-xs w-3/4 mt-4 lg:mt-64">
         Agora Partnerships® All Rights Reserved.Reg. U.S. Pat. and TM Off
         <span className="text-rose-900 cursor-pointer text-xs"> Política de Privacidad</span></p>
      </div>    
@@ -21,14 +21,14 @@ function Footer() {
        <h3 className="leading-loose cursor-pointer">Quiénes somos</h3>
        <h3 className="leading-loose cursor-pointer">Programas</h3>
        <h3 className="leading-loose cursor-pointer">Impacto</h3>
-       <h3 className="leading-loose cursor-pointer">Sumate</h3>
+       <h3 className="leading-loose cursor-pointer">Súmate</h3>
        <h3 className="leading-loose cursor-pointer">Blog</h3>
        <h3 className="leading-loose cursor-pointer">Recursos</h3>
        <h3 className="leading-loose cursor-pointer">Sedes</h3>
        <h3 className="leading-loose cursor-pointer">Change Lab</h3>
      </div>
      <div className="m-10 leading-loose ">
-      <button type="button" className="bg-rose-700 text-white rounded-2xl px-4 py-2 text-xs"> Donar</button>
+      <button type="button" className="bg-rose-700 text-white rounded-2xl px-4 text-md"> Donar</button>
       <h3 className="font-bold cursor-pointer">Suscribirme al newsletter</h3>
      </div>
       <div className="m-10">
@@ -42,7 +42,7 @@ function Footer() {
           <img src={linkedin} className="w-8 m-2 " onClick={() => navigate("/")} /> 
           <img src={yt} className="w-8 m-2 " onClick={() => navigate("/")} /> 
         </div>
-        <p className="mt-48">info@agora2030.org</p>
+        <p className="lg:mt-48">info@agora2030.org</p>
       </div>
    </div>
  );

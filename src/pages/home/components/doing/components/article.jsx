@@ -6,13 +6,12 @@ const ArticleComponent = ({ article,index }) => {
 const [hover, setHover] = useState(false);
 
   return (
-    <div className="w-1/3 m-5 cursor-pointer" onMouseEnter={() => setHover(true)}
+    <div className="lg:w-full m-5 cursor-pointer" onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}>
       <img
         className="object-fill hover:object-cover h-60 w-full rounded-xl m-auto"
         src={article.urlToImage}
         alt={article.author}
-       
       />
       <div 
       className={`mt-6 

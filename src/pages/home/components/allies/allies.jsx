@@ -16,13 +16,13 @@ function Allies() {
       return (
         <div className='w-3/4 m-auto mt-12'>  
            <div className="flex justify-between"> 
-              <h1 className="h-11 font-bold text-2xl">Nuestros Aliados</h1>
+              <h1 className="h-11 text-blue-950 text-3xl">Nuestros Aliados</h1>
               <div className="flex"> 
-                <h4 className="font-bold">Súmate como aliado</h4>
+                <h4 className="font-bold text-blue-950">Súmate como aliado</h4>
               
               </div>  
           </div>
-          <h6>Conoce a las organizaciones que nos acompañan por una sociedad más<br/>
+          <h6 className='mt-20 lg:mt-0'>Conoce a las organizaciones que nos acompañan por una sociedad más<br/>
           inclusiva y en sintonía con el ambiente.
           </h6>  
           <h6>Contáctate para conocer más sobre cómo colaborar con Agora<br/>Partnerships.</h6> 

@@ -43,11 +43,11 @@
 ## Ejecucion y Compilacion
 
     ```sh
-    npm intall
+        npm intall
     ```
 
     ```sh
-    npm run dev
+        npm run dev
     ```
 
 ## Hosting

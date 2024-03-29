@@ -8,7 +8,7 @@
     - Pagina de Blog
         En la pagina de blog nos encontramos con una seccion introductoria, seguida de una seccion de noticias ordenadas en 3 columnas encabezada por una seccion que seria filtro de categorias y paginadas en la parte inferior
 
-    ## Estructura de los archivos
+## Estructura de los archivos
 
     - `src`
         - `api` archivo donde se hace la conexion y consulta a la api
@@ -25,7 +25,7 @@
         - `router` archivo de rutas
         - `services` aqui incluimos axios client
 
-    ## Herramientas y Tecnologias utilizadas
+## Herramientas y Tecnologias utilizadas
 
     - `React` libreria principal de desarrollo
     - `Tailwind` Proveedor de estilo
@@ -40,7 +40,7 @@
     - `NewsApi: https://newsapi.org/docs/endpoints/top-headlines` para consumir los articulos de la pagina principal y el blog
     - `Axios` para el consumo de la api
 
-    ## Ejecucion y Compilacion
+## Ejecucion y Compilacion
 
     ```sh
     npm intall
@@ -50,6 +50,6 @@
     npm run dev
     ```
 
-    ## Hosting
+## Hosting
 
     - `http://127.0.0.1:5173/`  presione 'ctr+clik' en la url para ver en su navegador predeterminado.

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const ArticleComponent = ({ article,index }) => {
 
 const [hover, setHover] = useState(false);
-console.log(article.multimedia[0].url)
+
   return (
   
     <div className="lg:w-full m-5 cursor-pointer" onMouseEnter={() => setHover(true)}

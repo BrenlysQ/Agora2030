@@ -1,4 +1,3 @@
-import newsApi from "../../../../api/newsApi";
 import ArticleComponent from './components/article';
 import { useEffect, useState } from 'react'
 
@@ -6,13 +5,7 @@ function Doing() {
   const [articles, setArticles] = useState([])
  
   useEffect(() => {
-    newsApi.newsApi()
-      .then((res) => {
-        console.log(res)
-        setArticles(res.slice(0,3));
-      }).catch((err) => {
-      console.log(err);
-    });
+    setArticles(JSON.parse(localStorage.getItem('data')).slice(0,3))
   }, [])
  
     return (

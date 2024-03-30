@@ -1,4 +1,3 @@
-import newsApi from "../../../../api/newsApi";
 import { useEffect, useState } from 'react'
 import Pagination from "./pagination";
 
@@ -16,39 +15,35 @@ function Articles() {
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
 
     const currentPosts = articles.slice(indexOfFirstPost, indexOfLastPost);
-    const category = articles.slice(0, 6);
+  
  
     useEffect(() => {
-      newsApi.newsApi()
-        .then((res) => {
-            console.log(res.data.articles)
-          setArticles(res.data.articles.slice(0,15));
-        }).catch((err) => {
-        console.log(err);
-      });
+      setArticles(JSON.parse(localStorage.getItem('data')))
     }, [])
+     const category = articles.slice(0, 6);
+     console.log(category)
    
       return (
         <div className='lg:w-2/3 m-auto mt-12'>
           <div className="lg:flex lg:w-2/3 m-auto bg-gray-800 rounded-xl items-center">
             {category.map((article, index) => (
               <div key={index} className="lg:w-1/4 m-5 p-1 lg:p-0 cursor-pointer">                    
-                <h4 className="text-sm text-white">{article.source.name}</h4>                     
+                <h4 className="text-sm text-white">{article.section_name}</h4>                     
               </div>
             ))}
           </div>
           <div className="lg:flex lg:flex-wrap lg:justify-between mt-8">
             {currentPosts.map((article, index) => (
                 <div key={index} className="lg:w-1/3 p-3 cursor-pointer relative">
-                  <h4 className="bg-gray-700 w-1/3 text-white rounded-xl text-center absolute top-6 left-6">{article.source.name}</h4>
+                  <h4 className="bg-gray-700 w-1/3 text-white rounded-xl text-center absolute top-6 left-6">{article.section_name}</h4>
                     <img
                         className="object-fill  h-60 w-full rounded-xl m-auto"
-                        src={article.urlToImage}
+                        src={`https://www.nytimes.com/${article.multimedia[0]?.url}`}
                         alt={article.author}
                     />
                     <div className={`mt-6 rounded-xl p-5`}>
-                        <h1 className="font-bold">{article.title}</h1>
-                        <p className="mt-4 text-sm">{article.content}</p>
+                    <h1 className="font-bold">{article.headline.main}</h1>
+                    <p className="mt-4 text-sm">{article.snippet}</p>
                     </div>
                     <button className="bg-rose-700 text-white rounded-2xl px-4 py-2 text-xs">CONOCER MÁS</button>
                 </div>

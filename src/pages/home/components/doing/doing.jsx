@@ -8,7 +8,8 @@ function Doing() {
   useEffect(() => {
     newsApi.newsApi()
       .then((res) => {
-        setArticles(res.data.articles.slice(0,3));
+        console.log(res)
+        setArticles(res.slice(0,3));
       }).catch((err) => {
       console.log(err);
     });

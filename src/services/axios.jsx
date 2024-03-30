@@ -1,4 +1,4 @@
-import axios from 'axios';
+/*import axios from 'axios';
 
 const axiosClient = axios.create({
   baseURL: '',
@@ -28,4 +28,4 @@ axiosClient.interceptors.response.use((response) => response, (error) => {
   throw error;
 });
 
-export default axiosClient;
+export default axiosClient;*/

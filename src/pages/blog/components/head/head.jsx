@@ -8,7 +8,7 @@ function Head() {
             <h3 className='m-5 text-white'>NUESTRO BLOG</h3>
             <h2 className='m-5 text-white text-4xl'>Conoce nuestros últimos artículos y noticias</h2>
          </div>
-            <img src={Men} className='rounded-xl m-3 lg:m-0'/>    
+            <img src={Men} className='rounded-xl m-3 lg:m-0 w-11/12'/>    
         </div>
       )
     }

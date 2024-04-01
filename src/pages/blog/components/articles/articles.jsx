@@ -18,7 +18,7 @@ function Articles() {
   
  
     useEffect(() => {
-      setArticles(JSON.parse(localStorage.getItem('data')))
+      localStorage.getItem('data') && setArticles(JSON.parse(localStorage.getItem('data')))
     }, [])
      const category = articles.slice(0, 6);
      console.log(category)

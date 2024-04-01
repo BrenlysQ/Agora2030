@@ -5,7 +5,7 @@ function Doing() {
   const [articles, setArticles] = useState([])
  
   useEffect(() => {
-    setArticles(JSON.parse(localStorage.getItem('data')).slice(0,3))
+    localStorage.getItem('data') && setArticles(JSON.parse(localStorage.getItem('data')).slice(0,3))
   }, [])
  
     return (

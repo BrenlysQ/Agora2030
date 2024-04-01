@@ -22,12 +22,12 @@ return (
           <button className='text-3xl cursor-pointer ' onClick={() => setIsOpen(!isOpen)}>
             &#9776;
           </button>
-          <div className={`absolute top-0 left-0 w-full bg-white p-8 ${isOpen ? 'block' : 'hidden'}`}>   
+          <div className={`absolute top-16 left-0 w-full bg-white p-8 ${isOpen ? 'block' : 'hidden'}`}>   
             <h3 className='cursor-pointer m-1 lg:m-5 ' onClick={() => setIsOpen(!isOpen)}>Quiénes somos</h3>
             <h3 className='cursor-pointer m-1 lg:m-5 ' onClick={() => setIsOpen(!isOpen)}>Programas</h3>       
             <h3 className='cursor-pointer m-1 lg:m-5 ' onClick={() => setIsOpen(!isOpen)}>Impacto</h3>   
             <h3 className='cursor-pointer m-1 lg:m-5 ' onClick={() => setIsOpen(!isOpen)}>Sumate</h3>
-            <h3 className='cursor-pointer m-1 lg:m-5 ' onClick={() => Blog}>Blog</h3>
+            <h3 className='cursor-pointer m-1 lg:m-5 ' onClick={() => Blog()}>Blog</h3>
             <h3 className='cursor-pointer m-1 lg:m-5 ' onClick={() => setIsOpen(!isOpen)}>Recursos</h3>
             <h3 className='cursor-pointer m-1 lg:m-5 ' onClick={() => setIsOpen(!isOpen)}>Sedes</h3>
             <h3 className='cursor-pointer m-1 lg:m-5  font-bold text-blue-900' onClick={() => setIsOpen(!isOpen)}>Change Lab</h3>

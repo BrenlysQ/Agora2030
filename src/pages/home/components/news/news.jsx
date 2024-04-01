@@ -4,7 +4,7 @@ function News() {
    
  
     useEffect(() => {
-      setArticles(JSON.parse(localStorage.getItem('data')).slice(3,6))
+      localStorage.getItem('data') && setArticles(JSON.parse(localStorage.getItem('data')).slice(3,6))
     }, [])
    
    
